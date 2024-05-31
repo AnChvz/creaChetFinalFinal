@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis domicilio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font (DM Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Exo:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&display=swap"
+        rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="/front-end/vistas/misDomicilios/misDomiciliosprueba.css">
+    <!-- CSS del Navbar -->
+    <link rel="stylesheet" href="/front-end/components/navbar/navbar.css">
+    <!-- CSS del Footer -->
+    <link rel="stylesheet" href="/front-end/components/footer/footer.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" href="/front-end/vistas/paginaPrincipal/paginaPrincipal.html"><img id="Logo1" src="/front-end/components/navbar/assets/logoP.jpg" alt=""></a>
+        <div class="container-fluid" id="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active">+37 (17) 379-10-10</a>
+                        <form class="d-flex align-items-center" role="search">
+                            <input class="form-control me-2" id="Input--buscar" type="search" placeholder="Lo más vendido" aria-label="">
+                            <img class="icon-add" src="/front-end/components/navbar/assets/icono.jpg" alt="Agregar Nuevo">
+                        </form>
+                    </li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" id="Acercade" href="/front-end/vistas/acercaNosotros/acercaNosotros.html" role="button">Acerca de</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn" id="Productos" href="/front-end/vistas/productos/productos.html" role="button">Productos</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn" id="Contacto" href="/front-end/vistas/contacto/contacto.html" role="button">Contacto</a>
+                            </div>
+                            <div class="col">
+                                <a class="navbar-brand" id="Perfil" href="/front-end/vistas/logIn/logIn.html">
+                                    <img id="Logo3" src="/front-end/components/navbar/assets/icono3.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <form class="d-flex align-items-center" role="search" id="seccion2Buscar">
+                                    <input class="form-control form-control-lg me-3 flex-grow-1" id="Barra-Buscar" type="search" placeholder="Buscar">
+                                    <a class="navbar-brand" id="icono2" href="#"><img id="Logo" src="/front-end/components/navbar/assets/icono2.png" alt=""></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Aquí empieza la tarjeta de Mis Domicilios-->
+    <div class="card--domicilios text-center row">
+          <div class="titulo--domicilios col-sm-12 text-start">
+            <h3>Mis Domicilios</h3>
+            <br>
+            <div class="datos--tarjeta text-center row">
+                <div class="checkbox--circular col-sm-1 text-start">
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="col-sm-11 text-start">
+                    <div class="cp--domicilio">
+                        <p>CP. xxxxx</p>
+                    </div>
+                    <div class="direccion--domicilio">
+                        <p> Calle "nombre" "número" - "Colonia" - "Ciudad", "Estado"</p>
+                    </div>
+                    <div class="nombre--domicilio">
+                        <p>Nombre Apellido - 1234567890</p>
+                    </div>
+                    <div class="editar--domicilio">
+                        <button type="button" class="boton">Editar</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="datos--tarjeta text-center row">
+                <div class="checkbox--circular col-sm-1 text-start">
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="col-sm-11 text-start">
+                    <div class="cp--domicilio">
+                        <p>CP. xxxxx</p>
+                    </div>
+                    <div class="direccion--domicilio">
+                        <p> Calle "nombre" "número" - "Colonia" - "Ciudad", "Estado"</p>
+                    </div>
+                    <div class="nombre--domicilio">
+                        <p>Nombre Apellido - 1234567890</p>
+                    </div>
+                    <div class="editar--domicilio">
+                        <button type="button" class="boton">Editar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="ultimo--boton text-center">
+            <div class="row">
+                <div class="col-sm-6 text-center" id="ultimo--boton">
+                    <button type="button" class="boton3">Confirmar</button>
+                </div>
+                <div class="col-sm-6 text-center" id="ultimo--boton">
+                    <button type="button" class="boton2">Nueva dirección</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <!-- PARTE DE LA DERECHA -->
+                <div class="Parte--derecha col-sm-5 text-center align-content-center justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-3 text-center">
+                            <a id="text--a" href="" target="_blank">Inicio</a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Producto</a>
+                        </div>
+                        <div class="col-sm-5 text-center">
+                            <a id="text--a" href="" target="_blank">Acerca de nosotros</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PARTE DE LA IMAGEN -->
+                <div class="Parte--centro col-sm-2 text-center align-content-center justify-content-center">
+                    <img src="/front-end/components/footer/assets/logo_footer.png" alt="Logo de Crea-chet"
+                        id="logo--footer">
+                </div>
+                <!-- PARTE DE LA IZQUIERDA -->
+                <div class="Parte--izquierda col-sm-5 text-center align-content-center justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Contacto</a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Registrate</a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Carrito de compras</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 text-center align-items-center justify-content-center">
+                    <a href="https://www.facebook.com/"><img class="icono" id="icono--fb"
+                            src="/front-end/components/footer/assets/image_fb.png" alt=""></a>
+                    <a href="https://www.facebook.com/"><img class="icono" id="icono--ig"
+                            src="/front-end/components/footer/assets/image_ig.png" alt=""></a>
+                    <a href="https://www.facebook.com/"><img class="icono" id="icono--wha"
+                            src="/front-end/components/footer/assets/image_wha.png" alt=""></a>
+                </div>
+            </div>
+            <br>
+            <p>"Tú lo imaginas, nosotros lo creamos"</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

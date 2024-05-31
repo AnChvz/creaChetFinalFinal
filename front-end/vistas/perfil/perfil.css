@@ -1,0 +1,85 @@
+
+.color-de-fondo{
+    background-color: #FFDDD2;
+}
+/*
+.nav-link.active {
+    
+    background-color: red; 
+    border-color: 705b36;
+}
+*/
+
+.datos-usuario{
+    background-color: #ffddd271 ;
+    border: solid 5px;
+    border-radius: 12px;
+    border-color: #FF8DC7;
+    font-family: "DM Sans";
+    font-size: medium;
+    color: #705b36;
+}
+
+.imagen-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff ;
+    border: solid 5px;
+    border-radius: 12px;
+    border-color: #C2A882;
+    font-family: "DM Sans";
+    font-size: medium;
+    color: #705b36;
+}
+
+.formulario-container{
+    background-color: #ffffff;
+    border: solid 5px;
+    border-radius: 12px;
+    font-size:small;
+    border-color: #C2A882;
+    
+}
+
+.datos-usuario {
+    color: #FF8DC7; 
+    font-size: 150%;
+}
+
+.texto-datos-usuario{
+    color: #705b36;
+}
+.modal-content{
+    font-family: "DM Sans";
+    background-color: #C2A882;
+    border-color: #FF8DC7;
+
+}
+
+.modal-title{
+    color:#ffffff
+}
+
+.btn-guardarCambios{
+    background-color: #ffffff;
+    border-color: #FF8DC7;
+    color: #FF8DC7;
+}
+.btn-guardarCambios:hover{
+    background-color: #FF8DC7;
+    border-color: #FF8DC7;
+} 
+
+
+.btn-cancelar{
+    background-color: #ffffff;
+    border-color: #FF8DC7;
+    color: #FF8DC7;
+}
+
+.btn-cancelar:hover{
+    background-color: red;
+    border-color: #FF8DC7;
+    color: white;
+}

@@ -1,0 +1,56 @@
+.color-de-fondo-paginaPrincipal{
+    background-color: #ffebf2;
+}
+
+.color-de-fondo{
+    background-color: #ffebf2;
+}
+
+.primerCarrusell{
+    background-color: white; /* Cambia el último valor (0.8) según la opacidad que desees */
+}
+
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    margin: 0.5em;
+    width: calc(100%/3);
+}
+
+.image-wrapper{
+    height: 22vw;
+    margin: 0 auto;
+}
+
+.image-wrapper{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cards-tercerCarrusell{
+    display: flex;
+}
+
+.cards-cuartoCarrusell{
+    display: flex;
+}
+
+.card-3{
+    display: flex;
+}
+
+.boton-custom {
+    background-color: #FF8DC7; /* Cambia esto al color que desees */
+    color: white;
+    border: none; /* Opcional: Quita el borde */
+}
+
+.boton-custom:hover {
+    background-color: white; /* Opcional: Cambia el color al pasar el mouse */
+    color: #FF8DC7;
+    border-color:solid  #FF8DC7;
+}
+
+
+

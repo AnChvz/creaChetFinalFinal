@@ -1,0 +1,161 @@
+.pedidos {
+    margin-top: 20px;
+    overflow: auto;
+    max-height: 600px;
+}
+
+/* Estilos para las tarjetas de pedido */
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Divide la tarjeta en dos columnas */
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.imagen-left {
+    width: 200px;
+    height: 180px;
+    grid-column: 1; /* La imagen estará en la primera columna */
+}
+
+.imagen-left img {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.imagen-top {
+    width: 200px;
+    height: 180px;
+}
+.imagen-top img {
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        object-fit: cover;
+}
+
+.contenido {
+    grid-column: 2; /* El contenido estará en la segunda columna */
+    padding: 5px;
+    display: grid; /* Cambiar a un contenedor de cuadrícula */
+    grid-template-columns: auto; /* Una sola columna para el contenido */
+    grid-template-rows: repeat(3, auto); /* Tres filas */
+    gap: 10px; /* Espacio entre las filas */
+    text-align: justify;
+    margin-right: 5%;
+    width: 100%;
+    height: 150px;
+}
+
+/* Alineación de los elementos dentro del contenido */
+.contenido h2,
+.contenido p, 
+.contenido div{
+    margin: 0;
+}
+
+
+
+.contenido .info h2 {
+    grid-row: 1 / 2; /* Ocupa la primera fila */
+    margin: 0;
+    font-size: 18px;
+}
+
+.contenido .info p:first-of-type {
+    grid-row: 2 / 3; /* Ocupa la segunda fila */
+    padding-right: 10%;
+    padding-top: 2%;
+    height: 100px;
+    overflow: auto;
+    font-size: 16px;
+}
+
+.contenido .info p:last-of-type { /* Texto de la fecha */
+    grid-row: 3 / 4; /* Ocupa la tercera fila */
+    font-size: 16px;
+}
+
+
+
+
+/* Estilos para el contenedor de las tarjetas */
+.relatedItems {
+    display: flex; /* Contenedor flexible */
+    overflow-x: auto; /* Scroll horizontal */
+    width: 100%; /* Ancho completo */
+    white-space: nowrap; /* Evitar el salto de línea */
+}
+
+/* Estilos para cada tarjeta */
+.relatedCard {
+    flex: 0 0 calc(33.33% - 20px); /* Tamaño de un tercio del ancho de la pantalla */
+    margin-right: 20px; /* Espacio entre las tarjetas */
+    overflow: hidden; /* Ocultar el contenido que excede el tamaño */
+    border: 1px solid #ccc; /* Borde para las tarjetas (opcional) */
+    box-sizing: border-box; /* Incluir el borde en el tamaño total */
+}
+
+/* Estilos para la imagen de la tarjeta */
+.imagen-top {
+    height: 200px; /* Altura de la imagen */
+    overflow: hidden; /* Ocultar el contenido que excede el tamaño */
+}
+
+.imagen-top img {
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    object-fit: cover; /* Ajustar la imagen para que cubra */
+}
+
+/* Estilos para el contenido de la tarjeta */
+.relatedItemContent {
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para los elementos de información */
+.relatedItemInfo {
+    text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilos para el título */
+.relatedItemInfo h2 {
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+/* Estilos para el precio */
+.relatedItemInfo p:last-child {
+    margin-top: 5px; /* Espacio superior */
+}
+
+
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        justify-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+
+    .imagen-left,
+    .contenido {
+        grid-column: auto; /* Vuelve a la configuración automática de grid-column */
+        padding: 20px;
+    }
+
+    .contenido {
+        order: 1;
+    }
+    .contenido .info p:first-of-type {
+        height: 60px;
+    }
+}

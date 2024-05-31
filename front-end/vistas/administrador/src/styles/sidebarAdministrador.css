@@ -1,0 +1,16 @@
+.backgroundColor{
+background-color: #FFDDD2;
+}
+
+.texto1{
+  color: #705B36;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+}
+.texto1:hover{
+  color: #FF8DC7;
+  font-weight: 700;
+ 
+}
+
+

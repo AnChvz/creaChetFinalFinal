@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SingUp</title>
+    <!-- CSS de la página -->
+    <link rel="stylesheet" href="/front-end/vistas/registroUsuarios/registroUsuarios.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Exo:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- CSS del Footer -->
+    <link rel="stylesheet" href="/front-end/components/footer/footer.css">
+    <link rel="stylesheet" href="/front-end/components/navbar/navbar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" href="/front-end/vistas/paginaPrincipal/paginaPrincipal.html"><img id="Logo1" src="/front-end/components/navbar/assets/logoP.jpg" alt=""></a>
+        <div class="container-fluid" id="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active">+37 (17) 379-10-10</a>
+                        <form class="d-flex align-items-center" role="search">
+                            <input class="form-control me-2" id="Input--buscar" type="search" placeholder="Lo más vendido" aria-label="">
+                            <img class="icon-add" src="/front-end/components/navbar/assets/icono.jpg" alt="Agregar Nuevo">
+                        </form>
+                    </li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" id="Acercade" href="/front-end/vistas/acercaNosotros/acercaNosotros.html" role="button">Acerca de</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn" id="Productos" href="/front-end/vistas/productos/productos.html" role="button">Productos</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn" id="Contacto" href="/front-end/vistas/contacto/contacto.html" role="button">Contacto</a>
+                            </div>
+                            <div class="col">
+                                <a class="navbar-brand" id="Perfil" href="/front-end/vistas/logIn/logIn.html">
+                                    <img id="Logo3" src="/front-end/components/navbar/assets/icono3.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <form class="d-flex align-items-center" role="search" id="seccion2Buscar">
+                                    <input class="form-control form-control-lg me-3 flex-grow-1" id="Barra-Buscar" type="search" placeholder="Buscar">
+                                    <a class="navbar-brand" id="icono2" href="#"><img id="Logo" src="/front-end/components/navbar/assets/icono2.png" alt=""></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bckground p-2 p-md-5 font "><!-- container principal -->
+
+        <div class="container-fluid mb-3  borderStyle p-2 p-md-5 bckground1 "><!--  cont 1-->
+            <div class="card  border-0"><!-- Card principal -->
+                <div class="card-body">
+                        <div class="row justify-content-center "><!-- Crear fila y alinear al centro -->
+                        <div class="card text-center border-0"><!-- Card 1 -->
+                            <div class="card-body">
+                                <div class="fs-1">
+                                    <p>¿Aún no tienes cuenta?</p>
+                                    <p>¡Regístrate!</p>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="/front-end/assets/registroUsuarios/LogoCheacret-removebg-preview 1.svg" alt="Logo CreaChet">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- Card 1 -->
+                    </div><!-- Crear fila y alinear al centro -->
+                        <div class="row justify-content-center "><!-- Crear fila y alinear al centro -->
+                            <div class="card border-0 col-12 col-md-6"><!-- Card 2 -->
+                                <div class="card-body borderStyle">
+                                    <div>
+                                        <form class="fs-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom-border-su mb-1" id="nameInput"
+                                                    placeholder="Nombre(s)" />
+                                                <label for="nameInput">Nombre(s)</label>
+                                                <div id="ErrorName" class="invalid-feedback"></div>
+                                            </div>
+
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom-border-su" id="lastnameInput"
+                                                    placeholder="Apellido Paterno" />
+                                                <label for="lastnameInput">Apellido Paterno</label>
+                                                <div id="ErrorLastName" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom-border-su" id="lastnameInput2"
+                                                    placeholder="Apellido Materno" />
+                                                <label for="lastnameInput2">Apellido Materno</label>
+                                                <div id="ErrorLastName" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control custom-border-su" id="phoneInput"
+                                                    placeholder="Numero de telefono" />
+                                                <label for="phoneInput">Número de teléfono</label>
+                                                <div id="ErrorPhone" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control custom-border-su" id="emailInput"
+                                                    placeholder="Email" />
+                                                <label for="emailInput">Email</label>
+                                                <div id="ErrorEmail" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="password" class="form-control custom-border-su" id="passwordInput"
+                                                    placeholder="Password" />
+                                                <label for="passwordInput">Contraseña</label>
+                                                <div id="ErrorPassword" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="password" class="form-control custom-border-su" id="passwordInput2"
+                                                    placeholder="Password" />
+                                                <label for="passwordInput2">Confirmar contraseña</label>
+                                                <div id="ErrorConfirmPassword" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="col-md-12 text-center">
+
+                                                <button type="button" class=" botonUser fs-5"
+                                                    onclick="registrarse()">Registrarse</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- Card 2 -->
+                        </div><!-- Crear fila y alinear al centro -->
+                        </div>
+                    </div><!-- Card principal -->
+                
+            </div><!--  cont 1-->
+
+            <div class="container-fluid mb-3 borderStyle p-3 bckground1"><!-- cont 2 -->
+                <div class="row justify-content-center "><!-- Crear fila y alinear al centro -->
+                    <div class="card border-0 "><!-- Card principal -->
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8 mb-md-0  d-flex justify-content-center align-items-center text-center fs-3"> <!-- Para dispositivos medianos y grandes -->
+                                    <p>¿Ya tienes una cuenta?</p>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center align-items-center text-center">
+                                    <a href="/front-end/vistas/logIn/logIn.html" class="botonUser fs-5  no-underline">Inicia sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Card principal -->
+                </div><!-- Crear fila y alinear al centro -->
+            </div><!-- cont 2 -->
+
+            <div class="container-fluid mb-3 borderStyle p-3 bckground1"><!-- cont 3 -->
+                <div class="row justify-content-center "><!-- Crear fila y alinear al centro -->
+                    <div class="card border-0 "><!-- Card principal -->
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8 mb-md-0 d-flex justify-content-center align-items-center text-center fs-3 "> <!-- Para dispositivos medianos y grandes -->
+                                    <p>¿Dudas o sugerencias? </p>
+                                </div>
+                                <div class="col-md-4  d-flex justify-content-center align-items-center text-center ">
+                                    <a href="/front-end/vistas/contacto/contacto.html" class="botonUser fs-5  no-underline">Contáctanos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Card principal -->
+                </div><!-- Crear fila y alinear al centro -->
+            </div><!-- cont 3 -->
+
+
+        </div><!-- container principal -->
+
+        <!-- footer -->
+    <!-- Aquí se manda a llamar el footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <!-- PARTE DE LA DERECHA -->
+              <div class="Parte--derecha col-sm-5 text-center align-content-center justify-content-center">
+                <div class="row">
+                    <div class="col-sm-3 text-center">
+                        <a id="text--a" href="/front-end/vistas/paginaPrincipal/paginaPrincipal.html" >Inicio</a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a id="text--a" href="/front-end/vistas/productos/productos.html" >Producto</a>
+                    </div>
+                    <div class="col-sm-5 text-center">
+                        <a id="text--a" href="/front-end/vistas/acercaNosotros/acercaNosotros.html">Acerca de nosotros</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- PARTE DE LA IMAGEN -->
+              <div class="Parte--centro col-sm-2 text-center align-content-center justify-content-center">
+                <img src="/front-end/components/footer/assets/logo_footer.png" alt="Logo de Crea-chet" id="logo--footer">
+              </div>
+              <!-- PARTE DE LA IZQUIERDA -->
+              <div class="Parte--izquierda col-sm-5 text-center align-content-center justify-content-center">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <a id="text--a" href="/front-end/vistas/contacto/contacto.html">Contacto</a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a id="text--a" href="/front-end/vistas/registroUsuarios/registroUsuarios.html">Registrate</a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a id="text--a" href="/front-end/vistas/carritoCompras/carritoCompras.html">Carrito de compras</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 text-center align-items-center justify-content-center">
+                    <a href="https://www.facebook.com/" target="_blank" ><img class="icono" id="icono--fb" src="/front-end/components/footer/assets/image_fb.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"  ><img class="icono" id="icono--ig" src="/front-end/components/footer/assets/image_ig.png" alt=""></a>
+                    <a href="https://www.whatsapp.com/" target="_blank"  ><img class="icono" id="icono--wha" src="/front-end/components/footer/assets/image_wha.png" alt=""></a>
+                </div>
+            </div>
+            <br>
+            <p>"Tú lo imaginas,<br>nosotros lo creamos"</p>
+          </div>
+    </footer>
+
+</body>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<!-- JavaScript de la página -->
+<script src="/front-end/vistas/registroUsuarios/regUsuar.js"></script>
+</html>

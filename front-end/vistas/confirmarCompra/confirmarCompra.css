@@ -1,0 +1,108 @@
+.datos--tarjeta {
+    background-color: #ffddd271 ;
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #ffacc7;
+    font-family: "DM Sans";
+    font-size: medium;
+    color: #705b36;
+}
+
+.cuerpo {
+    background-color: #ffeef2;
+}
+
+.titulo--container {
+    padding-top: 4%;
+}
+.titulo--tarjeta h4{
+    color: #705b36;
+    font-weight: bold;
+}
+
+.tarjeta--total {
+    background-color: #ffeef2;
+    background-clip: border-box;
+    border-radius: 8px;
+}
+
+.detalles--compra {
+    background-color: white;
+    background-clip: padding-box;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.resumen--compra {
+    background-color: white;
+    background-clip: padding-box;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+
+.icono--ubicacion img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icono--transporte img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icono--credit img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.titulo--container h2 {
+    font: bold;
+    font-family: "DM Sans";
+    color: #705b36;
+}
+
+.boton2:hover {
+    background-color: white;
+    color:#FF8DC7 ;
+    border: 2px solid #FF8DC7;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+}
+
+.boton2 {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 5px;
+    font-size: 80%;
+    width: 80%;
+    height: 80%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.relleno--rc{
+    background-color: #ffddd271;
+    border-radius: 8px;
+}
+
+.relleno--rc h3{
+    color: #FF8DC7;
+}
+
+.relleno--rc hr{
+    border:solid 2px;
+    color: darkgray;
+}
+
+.detalles--producto {
+    color: #705b36;
+}
+
+#id--total {
+    color: #705b36;
+    font-weight: bold;
+}

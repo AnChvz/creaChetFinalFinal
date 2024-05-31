@@ -1,0 +1,116 @@
+#navbarPrincipal {
+    background-color: #FFDDD2;
+}
+
+
+.navbar--logo {
+    width: 130px;
+    height: 110px;
+    border-radius: 5%;
+}
+
+#search--bar {
+    max-width: 900px;
+    height: 33px;
+    border-radius: 50px;
+}
+
+.button3 {
+    background-color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 190px;
+    height: 33px;
+    text-align: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin: auto;
+    color: #FFACC7;
+}
+
+.button3:hover {
+    background-color: #FF8DC7;
+    color: white;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 140px;
+    height: 33px;
+    text-align: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin: 20px;
+    color: #FFACC7;
+
+}
+
+.button1:hover {
+    background-color: #FF8DC7;
+    color: white;
+}
+
+.button2 {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+    align-content: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+}
+
+.otrasPaginas {
+    margin-left: auto;
+
+}
+
+.loMasVendido {
+    margin-left: auto;
+
+}
+
+
+#rosa {
+    color: #FF8DC7;
+
+}
+
+.user {
+    background-color: white;
+    color: black;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+    margin: 20px;
+    color: #FFACC7;
+
+}
+
+.upperFooter{
+    height: 30px;
+    background-color: #FF8DC7;
+    text-align: center;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1000;
+}

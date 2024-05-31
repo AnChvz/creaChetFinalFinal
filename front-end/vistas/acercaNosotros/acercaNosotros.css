@@ -1,0 +1,51 @@
+body {
+    background-color:#FFF5FA;
+}
+/* Reset de estilos para la etiqueta de ancla */
+a.button.button3 {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Otra alternativa */
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.titulo1{
+    margin: 140px;
+}
+.custom-font {
+    font-family: "DM Sans", sans-serif;
+}
+.title1-custom{
+    font-size: 48px;
+    
+}
+.title-custom{
+    font-size: 36px;
+}
+.subtitle-custom{
+    font-size: 24px;
+    
+}
+.text-custom{
+    font-size: 18px;
+}
+.borderRad{
+    border-radius: 35px;
+    border:2px solid #FF8DC7;
+}
+
+/* Carrusel */
+.card-carrusel {
+    border-radius: 15px;
+    overflow: hidden; /* Para que las imágenes del carrusel no sobresalgan */
+}
+
+.carousel-item img {
+    width: 100%; /* Ancho del 100% del contenedor */
+    height: 300px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Para que las imágenes se ajusten y no se distorsionen */
+}

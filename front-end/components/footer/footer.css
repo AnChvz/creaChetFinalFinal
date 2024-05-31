@@ -1,0 +1,57 @@
+:root {
+    --font-family: "DM Sans", sans-serif;
+    --font-color: #705b36;
+    --font-size: small;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    background-color: #f2e8d8;
+    position: absolute;
+    width: 100%;
+}
+
+.footer hr {
+    width: 100%;
+    border: 1px solid #705b36;
+}
+
+#text--a {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#logo--footer {
+    height: 80%;
+    width: 80%;
+}
+
+.icono {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.container p{
+    font-family: var(--font-family);
+    font-size: smaller;
+    font-weight: light;
+    color: var(--font-color);
+}
+
+@media(max-width: 576px) {
+    #logo--footer {
+        height: 90%;
+        width: 45%;
+    }
+}

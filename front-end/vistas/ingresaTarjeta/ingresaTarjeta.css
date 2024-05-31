@@ -1,0 +1,89 @@
+
+#Contenido-TarjetaNueva {
+    background-color: #FFF5FA;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+#T-TarjetaNueva{
+    background-color: #FFF5FA;
+    color:#936536; 
+    font-weight: bold;
+    font-size: larger;
+    margin-top:3rem;
+    margin-bottom: 1rem;
+
+}
+
+#Nombre-T{
+    background-color: #FFEFEA;
+    border:solid #FF8DC7;
+    border-radius: 8px;
+    color:#936536; 
+    font-size: medium;
+    padding-left: 1rem;
+
+}
+#Icono-T{
+    margin:1%;
+    width: 5%;
+}
+#Formulario-Tarjeta{
+    background-color: white;
+    border-radius: 8px;
+    margin:0;
+    padding: 3% 0% 3% 0%;
+}
+.form-label-InTarjeta{
+    
+    color:#936536;
+    font-size: medium;
+
+}
+
+
+#InputNumTarjeta,#InputName,#InputFecha,#InputCVV{
+    background-color: #FFEFEA;
+    border-color: #FF8DC7;
+
+}
+#CuadroColor{
+    width: 20%;
+    height: 2rem;
+}
+#BotonRegresar{
+    margin: 2% 10% 2% 2%;
+    }
+#BotonRegresar,#BotonContinuar{
+    
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    font-size: medium;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#BotonRegresar:hover, #BotonContinuar:hover{
+    background-color: white;
+    color:#FF8DC7;;
+}
+#Tarjeta-pago{
+    border: gray;
+
+    padding:2rem 4rem 4rem 4rem;   
+}
+#contenido{
+    background-color: #EFE6DB;
+    color:black;
+    font-size: smaller;
+    font-weight: 700;
+    border-radius: 10px;
+}
+#rectagulo{
+    width:30% ;
+}
+#Chip,#Clave,#Datos{
+    padding: 5%;
+    
+}

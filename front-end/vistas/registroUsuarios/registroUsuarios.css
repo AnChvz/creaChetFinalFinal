@@ -1,0 +1,46 @@
+.font{
+    font-family: "DM Sans", sans-serif;
+}
+.bckground{
+    background-color: #FFF5FA;
+}
+.bckground1{
+background-color: rgb(255, 255, 255);
+
+}
+.borderStyle{
+    border-radius: 30px;
+    border: 2px solid #FF8DC7;
+}
+.custom-border-su{
+
+    border-radius: 20px !important;
+    border: 1px solid #FF8DC7 !important;
+
+}
+
+.custom-border-su:focus{
+    
+    box-shadow: 0 0 0 0.25rem rgba(255, 141, 199, 0.5) !important;
+    /* Aplica una sombra */ 
+
+}
+
+.botonUser{
+    background-color: #FF8DC7;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+}
+
+.botonUser:hover{
+    background-color: #ffffff;
+    color: #FF8DC7;
+    border-radius: 20px;
+    padding: 20px;
+    outline: 1px solid #FF8DC7;
+}
+.no-underline {
+    text-decoration: none;
+}

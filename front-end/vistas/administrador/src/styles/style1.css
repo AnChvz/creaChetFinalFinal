@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/*Controla tamaño, color, tpo de letra y alineación del texto de cada uno de los items del sidebar*/
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cambia el color, tamaño y alineación de "X" del sidebar */
+.btn{
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.btn.click{
+  left: 260px;
+}
+
+
+
+/*Controla las barras y permite cambiarle de tamaño y alinearla*/
+.btn span{
+  color: #FF8DC7;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.btn.click span:before{
+  content: '\f00d';
+}
+
+/* Controla color y detalles del fondo en general del sidebar */
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  background: #FF8DC7;
+  transition: left 0.4s ease;
+}
+
+
+/*configura el contenido para que se mueva hacia la derecha al presionar el ícono de hamburguesa*/
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #E5E5E5;
+  z-index: -1;
+  text-align: center;
+  transition: transform 0.4s ease; /* Agrega una transición suave para el desplazamiento */
+}
+
+.sidebar.show + .main-content {
+  transform: translate(calc(-50% + 250px), -50%); /* Desplaza el contenido a la derecha */
+}
+
+.sidebar.show{
+  left: 0px;
+}
+/* Ajustes y tamaño para el logo, (esta clase no funciona...)
+.sidebar .logo img {
+  width: 20px 0 ;  Ajusta el tamaño del logo según sea necesario 
+  height: 30px;  Mantén la proporción de aspecto 
+  margin-right: 0px;  Espacio entre el logo y el texto 
+}
+*/
+
+/*Cambia los valores del logo*/
+.sidebar .logo{
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar .logo img{
+  width: 200px;
+  height: auto;
+}
+
+
+/*Controla la palabra "sidebar" del sidebar */
+.sidebar .text{
+  color: #FF8DC7;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #F3E8D8;
+  letter-spacing: 1px;
+}
+
+/*Controla el fondo del sidebar*/
+nav ul{
+  background: white;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+/*Separa cda categoría, agrega bordes para separarlos por categoria y distinguirlos del sidebar*/
+nav ul li{
+  line-height: 60px;
+  border-top: 1px solid #FF8DC7;
+}
+
+nav ul li:last-child{
+  border-bottom: 1px solid #FF8DC7;
+}
+
+/*Acomoda texto, color y tamaño en general del sidebar*/
+nav ul li a{
+  position: relative;
+  color: #FF8DC7;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid #e8e1d7;
+}
+
+/*Cambia el color de la barra lateral izquierda y la palabra seleccionada*/
+nav ul li.active a{
+  color: #FF8DC7;
+  background: white;
+  border-left-color: #FF8DC7;
+}
+
+nav ul li a:hover{
+  background: #e8e1d7;
+}
+
+/* Esconde elementos de dashboard y feactures */
+nav ul ul{
+  position: static;
+  display: none;
+}
+
+nav ul .feat-show.show{
+  display: block;
+}
+
+nav ul .serv-show.show1{
+  display: block;
+}
+
+/* Separa los elementos por secciones */
+nav ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+
+/* Modifica las subcategorías de dashboard y services */
+nav ul ul li a{
+  font-size: 17px;
+  color: #FF8DC7;
+  padding-left: 80px;
+}
+
+nav ul li.active ul li a{
+  color: #FF8DC7;
+  background: white;
+  border-left-color: transparent;
+}
+
+nav ul ul li a:hover{
+  color: #FF8DC7!important;
+  background: #e8e1d7!important;
+}
+
+/* Posiciona la flecha en feactures y service, que cada que den clic para ver sus sub menu, esté centrado */
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+} 
+
+/*Cada que se selecciona el item de feactures, gira la flecha en 180°*/
+nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #e8e1d7;
+  z-index: -1;
+  text-align: center;
+}
+
+.content .header{
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.content p{
+  font-size: 30px;
+  font-weight: 500;
+}

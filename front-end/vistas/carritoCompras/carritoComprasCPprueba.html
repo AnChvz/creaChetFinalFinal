@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compra</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font (DM Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Exo:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&display=swap"
+        rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="/front-end/vistas/carritoCompras/carritoComprasCPprueba.css">
+    <!-- CSS del Navbar -->
+    <link rel="stylesheet" href="/front-end/components/navbar/navbar.css">
+    <!-- CSS del Footer -->
+    <link rel="stylesheet" href="/front-end/components/footer/footer.css">
+    <!-- JS del Boton de aumentar -->
+    <script src="/front-end/vistas/carritoCompras/carritoCompras.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid"> <!-- Contenedor fluido -->
+            <a class="navbar-brand" href="#"><img id="Logo1" src="/front-end/components/navbar/assets/logoP.jpg"
+                    alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active">+37 (17) 379-10-10</a>
+                        <form class="d-flex align-items-center " role="search">
+                            <input class="form-control me-2" id="Input--buscar" type="search"
+                                placeholder="Lo mas Vendido" aria-label="">
+                            <img class="icon-add" src="/front-end/components/navbar/assets/icono.jpg"
+                                alt="Agregar Nuevo">
+                        </form>
+                    </li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" id="Acercade" href="#" role="button">Acerca de</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn" id="Productos" href="#" role="button">Productos</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn" id="Contacto" href="#" role="button">Contacto</a>
+                            </div>
+                            <div class="col">
+                                <a class="navbar-brand" id="Perfil" href="#">
+                                    <img id="Logo3" src="/front-end/components/navbar/assets/icono3.svg" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <form class="d-flex align-items-center" role="search" id="seccion2Buscar">
+                                    <input class="form-control form-control-lg me-3 flex-grow-1" id="Barra-Buscar"
+                                        type="search" placeholder="Buscar">
+                                    <a class="navbar-brand" id="icono2" href="#"><img id="Logo"
+                                            src="/front-end/components/navbar/assets/icono2.png" alt=""></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Aquí empieza la tarjeta de Mis Productos-->
+    <div class="card--productos text-center row">
+        <div class="titulo--productos  text-center">
+            <h3>Productos</h3>
+            <div class="articulos row text-center">
+                <hr>
+                <div class="img--articulos col-md-3 text-center">
+                    <img src="/front-end/assets/imagenesProductos/Baby_Joda-removebg-preview.png" alt="Imagén de tu artículo">
+                </div>
+                <div class="Nombre--articulo col-md-5 text-center">
+                    <p>Baby Joda</p>
+                    <div class="btn--eliminar">
+                        <p>Eliminar artículo</p>
+                    </div>
+                </div>
+                <div class="numero--container col-md-4">
+                    <button id="decrementar">-</button>
+                    <span id="numero">0</span>
+                    <button id="incrementar">+</button>
+                    <div class="cantidad--articulos">
+                        <p>Artículos comprados: <span id="mismo--numero">0</span> </p>
+                    </div>
+                  </div>
+                  <hr>
+            </div>
+            <div class="articulos row text-center">
+                <div class="img--articulos col-md-3 text-center">
+                    <img src="/front-end/assets/imagenesProductos/Frida_Khalo-removebg-preview.png" alt="Imagén de tu artículo">
+                </div>
+                <div class="Nombre--articulo col-md-5 text-center">
+                    <p>Baby Joda</p>
+                    <div class="btn--eliminar">
+                        <p>Eliminar artículo</p>
+                    </div>
+                </div>
+                <div class="numero--container col-md-4">
+                    <button id="decrementar1">-</button>
+                    <span id="numero1">0</span>
+                    <button id="incrementar1">+</button>
+                    <div class="cantidad--articulos">
+                        <p>Artículos comprados: <span id="mismo--numero1">0</span> </p>
+                    </div>
+                  </div>
+                  <hr>
+            </div>
+        </div>
+        <div class="todo--Rcompra text-center">
+            <div class="titulo--Rcompra text-center">
+                <h3>Pedido actual</h3>
+                <hr>
+                <div class="Resumen--compra row text-center">
+                    <div class="cant--articulos col-md-6 text-center">
+                        <p>Productos: 0</p>
+                    </div>
+                    <div class="precio--articulos col-md-6 text-center">
+                        <p>$0.00</p>
+                    </div>
+                </div>
+                <div class="Resumen--compra row text-center">
+                    <div class="costo--envio col-md-6 text-center">
+                        <p>Costo de envío</p>
+                    </div>
+                    <div class="total--envio col-md-6 text-center">
+                        <p>$0.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="Resumen--compra row text-center">
+                    <div class="total--articulos col-md-6 text-center">
+                        <p>Total</p>
+                    </div>
+                    <div class="total--total col-md-6 text-center">
+                        <p>$0.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boton--compra text-center">
+                <button type="button" class="boton">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!----- Articulos relacionados ---->
+    <div class="articulos--parecidos text-start row">
+        <h3>Articulos relacionados</h3>
+        <div class="btn--prev text-end">
+            <button id="prev-button">&lt;</button>
+        </div>
+        <div class="carousel--img  text-center">
+            <img src="/front-end/assets/imagenesProductos/Baby_Joda-removebg-preview.png" alt="Imagen de carrusel">
+            <div class="text-center" id="ultimo--boton">
+                <button type="button" class="boton1">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="carousel--img text-center">
+            <img src="/front-end/assets/imagenesProductos/Camilo-removebg.png" alt="Imagen de carrusel">
+            <div class="text-center" id="ultimo--boton">
+                <button type="button" class="boton1">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="carousel--img text-center">
+            <img src="/front-end/assets/imagenesProductos/Frida_Khalo-removebg-preview.png" alt="Imagen de carrusel">
+            <div class="text-center" id="ultimo--boton">
+                <button type="button" class="boton1">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="btn--next text-start">
+            <button id="next-button">&gt;</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <!-- PARTE DE LA DERECHA -->
+                <div class="Parte--derecha col-sm-5 text-center align-content-center justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-3 text-center">
+                            <a id="text--a" href="" target="_blank">Inicio</a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Producto</a>
+                        </div>
+                        <div class="col-sm-5 text-center">
+                            <a id="text--a" href="" target="_blank">Acerca de nosotros</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PARTE DE LA IMAGEN -->
+                <div class="Parte--centro col-sm-2 text-center align-content-center justify-content-center">
+                    <img src="/front-end/components/footer/assets/logo_footer.png" alt="Logo de Crea-chet"
+                        id="logo--footer">
+                </div>
+                <!-- PARTE DE LA IZQUIERDA -->
+                <div class="Parte--izquierda col-sm-5 text-center align-content-center justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Contacto</a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Registrate</a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a id="text--a" href="" target="_blank">Carrito de compras</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 text-center align-items-center justify-content-center">
+                    <a href="https://www.facebook.com/"><img class="icono" id="icono--fb"
+                            src="/front-end/components/footer/assets/image_fb.png" alt=""></a>
+                    <a href="https://www.facebook.com/"><img class="icono" id="icono--ig"
+                            src="/front-end/components/footer/assets/image_ig.png" alt=""></a>
+                    <a href="https://www.facebook.com/"><img class="icono" id="icono--wha"
+                            src="/front-end/components/footer/assets/image_wha.png" alt=""></a>
+                </div>
+            </div>
+            <br>
+            <p>"Tú lo imaginas, nosotros lo creamos"</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

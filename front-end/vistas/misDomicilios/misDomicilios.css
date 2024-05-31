@@ -1,0 +1,128 @@
+.card {
+    border: solid 2px #f2e8d8;
+    border-radius: 8px;
+    background-color: #f2e8d8;
+    width: 80%;
+    height: 80%;
+}
+
+.card--body  h3{
+    font-family: "DM Sans";
+    color: #705b36;
+    font-weight: bold;
+}
+
+.datos--tarjeta {
+    background-color: #ffddd271 ;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #FF8DC7;
+    font-family: "DM Sans";
+    font-size: 150%;
+    color: #705b36;
+    font-weight: bold;
+    width: 90%;
+    height: 40%;
+}
+
+.boton2:hover {
+    background-color: #FF8DC7;
+    color:white ;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    width: 30%;
+    height: 50%;
+}
+
+.boton2 {
+    background-color: white;
+    color: #FF8DC7;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: 80%;
+    width: 30%;
+    height: 50%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.boton1:hover {
+    background-color: white;
+    color:#FF8DC7 ;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    width: 80%;
+    height: 100%;
+}
+
+.boton1 {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: 80%;
+    width: 80%;
+    height: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.boton3:hover {
+    background-color: #FF8DC7;
+    color:white ;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    width: 80%;
+    height: 100%;
+}
+
+.boton3 {
+    background-color: white;
+    color: #FF8DC7;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: 80%;
+    width: 80%;
+    height: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* Estilo personalizado para el checkbox circular */
+.checkbox--circular input[type="checkbox"] {
+    display: none; /* Oculta el checkbox nativo */
+  }
+
+  .checkbox--circular label {
+    display: inline-block;
+    width: 0%; /* Ancho del checkbox circular */
+    height: 0%; /* Altura del checkbox circular */
+    border-radius: 50%; /* Forma circular */
+    background-color: white; /* Color de fondo del checkbox */
+    border: 2px solid #ffacc7; /* Borde del checkbox */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+
+  .checkbox--circular input[type="checkbox"]:checked + label {
+    background-color: #ffacc7; /* Color de fondo cuando está marcado */
+    border-color: #FF8DC7; /* Borde cuando está marcado */
+  }
+
+   .checkbox--circular label::before {
+    content: "";
+    display: block;
+    width: 0%;  /* Tamaño del checkmark */
+    height: 0%; /* Tamaño del checkmark */
+    margin: 8px auto; /* Centrado vertical */
+    border-radius: 50%; /* Forma circular del checkmark */
+    background-color: white; /* Color del checkmark */
+    border: 2px solid white; /* Borde del checkmark */
+  }
+
+  .checkbox--circular input[type="checkbox"]:checked + label::before {
+    background-color: #ffacc7; /* Color del checkmark cuando está marcado */
+    border-color: #ffacc7; /* Borde del checkmark cuando está marcado */
+  }

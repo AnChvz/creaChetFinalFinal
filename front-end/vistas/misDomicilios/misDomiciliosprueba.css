@@ -1,0 +1,127 @@
+.card--domicilios {
+    width: 50%;
+    height: 90%;
+    border: solid 2px #FF8DC7;
+    margin: 5% 25%;
+    border-radius: 8px;
+}
+
+.titulo--domicilios h3{
+    margin-left: 3%;
+    margin-top: 3%;
+    font-size: 150%;
+    color: #705b36;
+    font-weight: bold;
+    font-family: "DM Sans";
+}
+
+.datos--tarjeta {
+    margin: 2%;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    background-color: #ff8dc829;
+    color: #705b36;
+    font-family: "DM Sans";
+    font-size: 95%;
+    font-weight: 400;
+}
+
+
+.ultimo--boton {
+    margin: 3% 0%;
+}
+
+
+
+/*---------- Aquí empieza el Checkbox -----------*/
+#checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-top: 10%;
+    width: 20px; /* Ancho del checkbox */
+    height: 20px; /* Alto del checkbox */
+    border-radius: 50%; /* Hacer el checkbox circular */
+    border: 2px solid #705b36; /* Borde del checkbox */
+    outline: none; /* Eliminar el contorno al hacer clic */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el checkbox */
+    font-family: "DM Sans";
+  }
+  
+  #checkbox:checked {
+    background-color: #FF8DC7; /* Cambiar el color de fondo cuando está marcado */
+  }
+  
+  #checkbox + label {
+    width: 20px; /* Ancho del checkbox */
+    height: 20px; /* Alto del checkbox */
+  }
+
+/*---------- Aquí empieza el Botón -----------*/
+.boton {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: medium;
+    width: auto;
+    height: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.boton:hover {
+    background-color: white;
+    color:#FF8DC7 ;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    width: auto;
+    height: 100%;
+}
+
+/*- Ultimo botón -*/
+.boton2 {
+    background-color: #ff8dc829;
+    color: #FF8DC7;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: medium;
+    width: auto;
+    height: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding: 4%;
+}
+
+.boton2:hover {
+    background-color: #FF8DC7;
+    color:white ;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    width: auto;
+    height: 100%;
+}
+
+.boton3 {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: medium;
+    width: auto;
+    height: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding: 4%;
+}
+
+.boton3:hover {
+    background-color: white;
+    color:#FF8DC7; ;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    width: auto;
+    height: 100%;
+}

@@ -1,0 +1,65 @@
+#navbar {
+    background-color: #FFDDD2;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+#Logo1 {
+    width: 70%;
+}
+
+.icon-add {
+    width: 10%;
+    cursor: pointer;
+}
+
+#Input--buscar {
+    width: 70%;
+    height: 40px;
+}
+
+#Contacto, #Productos, #Acercade {
+    color: #FF8DC7;
+    background-color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: 15px;
+    align-content: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    width: auto;
+    margin-top: 15%;
+}
+
+#Contacto:hover, #Productos:hover, #Acercade:hover {
+    background-color: #FF8DC7;
+    color: white;
+    cursor: pointer;
+}
+
+#Barra-Buscar {
+    width: 100%;
+    margin-top: 2%;
+}
+
+#seccion2Buscar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#Logo {
+    width: 30%;
+    margin-left: auto;
+}
+
+#Logo3 {
+    align-content: center;
+    width: auto;
+    height: 50px;
+    margin-top: 8%;
+}

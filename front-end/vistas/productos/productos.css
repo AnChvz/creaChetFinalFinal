@@ -1,0 +1,271 @@
+
+/*------------------------------------------------------------------------------ESTILOS PARA EL HEADER ------------------------------------------------------------------------*/
+#header--productos {
+    background-color:#f9d3eb;
+}
+
+#titulo--productos{
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+#titulo--categoria {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+#header--productos p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-content {
+        display: none;
+    }
+    .squaredThree {
+        position: relative;
+    }
+    .toggle-menu {
+        display: block;
+    }
+}
+
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 769px) {
+    .toggle-menu {
+        display: none;
+    }
+    .menu-content {
+        display: flex;
+    }
+}
+
+.toggle-menu {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    margin-left: 20px;
+
+}
+.squaredThree {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    gap: 20px;
+
+}
+
+.squaredThree p {
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background: linear-gradient(top, #FFACC7 0%, #f9d3eb 40%, #b3bead 100%);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px black; 
+    margin-right: 100px;
+    margin-left: 20px;
+    
+
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #FF8DC7;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #B59D7A;
+}
+
+.checkbox:hover {
+    box-shadow: -5px -5px 30px #FF8DC7;
+}
+
+
+/*-----------------------------------------------------------------------------FIN DE LOS ESTILOS PARA EL HEADER-----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------INICIO DE LOS ESTILOS DE LO MAS NUEVO-----------------------------------------------------------*/
+#titulo--loMasNuevo {
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    margin-left: 20px;
+}
+/* Estilos para cada tarjeta de producto */
+.product-card {
+    width: 25%; 
+    height: 350px; 
+    /* margin: 0 10px;  */
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block; 
+    vertical-align: top; 
+    max-width: calc(25% - 20px); 
+    flex-shrink: 0; 
+}
+
+.product-card img {
+    max-width: 100%; /* La imagen se ajusta al ancho de su contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-height: calc(100% - 160px); /* Altura máxima para la imagen, restando espacio para los botones y el precio */
+    object-fit: contain; /* Hacer que la imagen se ajuste dentro del contenedor manteniendo su proporción */
+}
+
+/* Estilos para el contenedor de productos */
+.product-container-wrapper {
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    overflow-y: hidden; /* Ocultar el desplazamiento vertical */
+    white-space: nowrap; /* Evitar el envolvimiento del contenido */
+    -webkit-overflow-scrolling: touch; /* Añadir desplazamiento suave en iOS */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* Ocultar la barra de desplazamiento en IE/Edge */
+    margin-bottom: 20px;
+    display: flex; /* Hacer que los elementos hijos se comporten como elementos flexibles */
+    flex-wrap: nowrap; /* Evitar que las tarjetas se envuelvan por defecto */
+    justify-content: center; /* Centrar los elementos hijos horizontalmente */
+    min-width: 100%; /* Establecer un ancho mínimo para el contenedor */
+}
+
+
+/*INICIO DE ESTILOS DE ALGUNOS ELEMENTOS DE LA CARD*/
+.product-card h3 {
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.product-card p {
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+}
+
+#btn-comprarLoMasNuevo, #btn-detallesLoMasNuevo{
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 8px;
+    font-size: medium;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+#btn-comprarLoMasNuevo:hover, #btn-detallesLoMasNuevo:hover {
+    background-color: white;
+    color:#FF8DC7;
+
+}
+/*----------------------------------------------------------------FIN DE ESTILOS DE ALGUNOS ELEMENTOS DE LA CARD------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------INICIO DE LOS ESTILOS PARA LOS BOTONES DE HACIA ADELANTE Y HACIA ATRAS---------------------------------------------- */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+    transition-duration: 0.5s;
+}
+
+#prev-button, #next-button {
+    background-color:#FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+#prev-button:hover, #next-button:hover {
+    background-color: white;
+    color: #FF8DC7;
+}
+/*-----------------------------------------------------------------------------FIN DE LOS ESTILOS DE LO MAS NUEVO----------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------INICIO PARA LOS ESTILOS DE ESCOGE TU FAVORITO-----------------------------------------------------*/
+#productos-container {
+    margin: 0 auto; /* Esto alinea el contenedor al centro horizontalmente */
+    width: 80%; /* Puedes ajustar el ancho según tus necesidades */
+}
+#escogeTuFavorito{
+    justify-content: center;
+    justify-content: center;
+}
+
+#titulo--escogeTuFavorito {
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.btn-comprar, .btn-detalles{
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 12px;
+    cursor:pointer;
+    transition-duration: 0.5s;
+    font-family: "DM Sans", sans-serif;
+    font-size: large;
+    transition: none;
+}
+
+.btn-comprar:hover, .btn-detalles:hover {
+    background-color: white;
+    color: #FF8DC7;
+    border: 2px solid #FF8DC7;
+}
+/*-----------------------------------------------------------------------------FIN DE LOS ESTILOS DE ESCOGE TU FAVORITO----------------------------------------------------------*/
+
+
+/*------------------------------------------------------------INICIO DE LOS ESTILOS DEL BOTON DE IR ARRIBA DE LA PÁGINA----------------------------------------------------------*/
+#btnIrArriba {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    font-size: small;
+    font-family: "DM Sans", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 7%;
+    margin-right: 2%;
+    padding: 0px 0px;
+    cursor: pointer;
+    display: none;
+    transition-duration: 0.5s;
+}
+
+#btnIrArriba img {
+    height: 30%;
+    width: 30%;
+}
+
+#btnIrArriba:hover {
+    background-color: white;
+    color: #FF8DC7;
+}
+/* Estilo para mostrar el botón cuando se desplaza */
+#btnIrArriba.mostrar {
+    display: block;
+}
+/*---------------------------------------------------------FIN DE LOS ESTILOS DEL BOTÓN DE IR ARRIBA DE LA PÁGINA----------------------------------------------------------------*/

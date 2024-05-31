@@ -1,0 +1,150 @@
+.card--perfil {
+    width: 100%;
+    height: 90%;
+    margin: 5% 0%;
+}
+
+.foto--perfil{
+    border: solid 15px #d9c2a6;
+    /* background-color: #ffddd271; */
+    border-radius: 50px;
+}
+
+.datos--perfil{
+    border: solid 15px #FFACC7;
+    border-radius: 50px;
+}
+
+
+.foto--perfil {
+    margin: 0% 2% 0% 10%;
+    width: 20%;
+    height: 100%;
+}
+
+.datos--perfil {
+    margin: 0% 10% 0% 2%;
+    width: 56%;
+    height: 100%;
+}
+
+.foto--perfil img{
+    margin: 3% 2%;
+    width: 75%;
+    height: 75%;
+    cursor: pointer;
+}
+
+.boton1 {
+    background-color: #ff8dc829;
+    color: #FF8DC7;
+    border: 2px solid #705b36;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    width: auto;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding: 5% 15%;
+    margin: 22% 0%;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.boton1:hover {
+    background-color: white;
+    color:#FF8DC7;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    width: auto;
+    height: 100%;
+}
+
+.titulo--datos {
+    width: 100%;
+}
+
+.imagen--datos {
+    width: 30%;
+}
+
+.imagen--datos img{
+    width: 30%;
+    height: 100%;
+}
+
+.tit--datos{
+    width: 60%;
+}
+
+.tit--datos h2 {
+    margin-left: 10%;
+    color: #FF8DC7;
+    font-weight: 600;
+    font-size: 200%;
+}
+
+.card--datos {
+    margin: 4% 8%;
+    border: solid 2px #705b36;
+    border-radius: 50px;
+}
+
+.rgn--datos {
+    width: 100%;
+}
+
+.nombre--usuario {
+    width: 75%;
+}
+
+.btn--editar {
+    width: 25%;
+}
+
+.nombre--usuario h2 {
+    margin-top: 3%;
+    margin-bottom: 0%;
+    margin-left: 30%;
+    border: 2px solid #ffb9b9;
+    border-radius: 10px;
+    font-size: 150%;
+    color: #FF8DC7;
+    font-weight: 600;
+    padding: 2%;
+}
+
+.btn--editar img{
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.btn--doble {
+    width: 100%;
+}
+
+.boton--espacio {
+    width: 50%;
+}
+
+.boton2 {
+    background-color: #ff8dc829;
+    color: #FF8DC7;
+    border: 2px solid #705b36;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    width: auto;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding: 3% 10%;
+    margin: 5% 0%;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.boton2:hover {
+    background-color: white;
+    color:#FF8DC7;
+    border: 2px solid #FF8DC7;
+    border-radius: 20px;
+    width: auto;
+}

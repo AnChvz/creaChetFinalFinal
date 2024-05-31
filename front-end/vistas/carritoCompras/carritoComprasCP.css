@@ -1,0 +1,126 @@
+#main--container {
+    padding-top:5%;
+    background-color: #FFF5FA;
+}
+
+.Productos--container, .Resumen--container {
+    border: solid 2px #705b36;
+    background-color: #ffddd271;
+    border-radius: 20px;
+}
+
+.Resumen--container h2, .Productos--container h2, .Articulos--relacionados h2 {
+    font-size: 180%;
+    font-family: "DM Sans";
+    color: #705b36;
+    font-weight: bolder;
+}
+
+.Resumen--container {
+    margin-top: 15%;
+}
+
+#Paty-Id {
+    margin-bottom: 3%;
+}
+
+
+.Productos--container, .Resumen--container {
+    font-family: "DM Sans";
+    color: #705b36;
+    font-size: 100%;
+}
+
+.articulo1 img {
+    height: 90%;
+    width: 90%;
+    border-radius: 8px;
+}
+
+.articulo1, .Nombre--articulo, .btn--eliminar p{
+    color: #705b36;
+}
+
+.btn--eliminar p {
+    color: #FF8DC7;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.boton--numero {
+    display: inline-flex;
+    align-items: center;
+    padding: 2% 12%;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .boton--numero:hover {
+    background-color: #e9ecef;
+  }
+
+  .boton--numero .icono {
+    font-size: 100%;
+  }
+
+  .texto--numero p {
+    font-size: medium;
+  }
+
+  .boton1:hover {
+    background-color: white;
+    color:#FF8DC7 ;
+    border: 2px solid #FF8DC7;
+    border-radius: 10px;
+    width: 50%;
+    height: 120%;
+    margin-top: 5%;
+}
+
+.boton1 {
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    border-radius: 10px;
+    font-size: 150%;
+    width: 50%;
+    height: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.articulos-relacion {
+    margin-bottom: -20px;
+}
+
+#art--relacion1 img, #art--relacion2 img {
+    height: 80%;
+    width: 90%;
+    border-radius: 8px;
+}
+
+#art--relacion1 p{
+    font-size: medium;
+    color: #705b36;
+    font-weight: bold;
+}
+
+#art--relacion2 p {
+    font-size: medium;
+    color: #705b36;
+}
+
+.container--articulo {
+    border: solid 2px #705b36;
+    background-color: #ffddd271;
+    border-radius: 12px;
+}
+
+#Paty-p {
+    font-weight: bold;
+}

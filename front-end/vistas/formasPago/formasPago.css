@@ -1,0 +1,52 @@
+
+.container-completo{
+    background-color: #FFF5FA;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    color:#936536; 
+    width: 100%;
+    height: 100%;
+}
+
+#Titulo-Pagar{
+    font-size: large;
+    margin-top: 1rem;
+}
+
+#ModosdePago {
+    background-color: white;
+    width: 35em;
+    border-radius: 5% ;
+    border:none;
+    margin: 2% 5% 10% 5%;
+
+}
+.container-Tarjeta,.container-Transferencia{
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+
+}
+
+#tarjetas-T{
+    background-color: #FFEFEA;
+    border-radius: 10px ;
+}
+
+
+#input-Tdebito,#input-NTcredito,#input-NTdebito,#input-Tranferencia,#label-Tdebito,#label-TNdebito,#label-TNcredito,#label-Transferencia{
+ margin-right:3px;
+ font-size: medium; 
+ color:#936536; 
+   
+}
+
+@media (max-width:760px) {
+    #ModosdePago {
+        width: 20em;
+    }
+
+    
+}
+
