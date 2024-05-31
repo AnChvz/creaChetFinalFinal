@@ -233,7 +233,6 @@ function generarTarjetas(productos) {
             <h3 id="card-productoNombre">${producto.nombre}</h3>
             <p>Precio: $ ${producto.precio}</p>
             <button id="btn-comprarLoMasNuevo">Comprar</button>
-            <button id="btn-detallesLoMasNuevo">Detalles</button>
         `;
         containerProductos.appendChild(card);
     });
@@ -335,20 +334,13 @@ function mostrarProductos() {
         // Crear botón de comprar
         const botonComprar = document.createElement('button');
         botonComprar.classList.add('btn', 'btn-comprar');
-        botonComprar.textContent = 'Comprar';
-
-        // Crear botón de detalles
-        const botonDetalles = document.createElement('button');
-        botonDetalles.classList.add('btn', 'btn-detalles');
-        botonDetalles.textContent = 'Detalles';
+        botonComprar.textContent = 'Agregar al carrito';
 
         // Agregar botones al contenedor
         botonContainer.appendChild(botonComprar);
-        botonContainer.appendChild(botonDetalles);
 
         // Agregar contenedor de botones al cuerpo de la tarjeta
         cuerpo.appendChild(titulo);
-        cuerpo.appendChild(descripcion);
         cuerpo.appendChild(precio);
         cuerpo.appendChild(botonContainer); 
 
