@@ -102,10 +102,17 @@ input[type="checkbox"]:checked {
 
 
 /*----------------------------------------------------------------------------INICIO DE LOS ESTILOS DE LO MAS NUEVO-----------------------------------------------------------*/
+#loMasNuevo {
+    width: 100%;
+}
+
 #titulo--loMasNuevo {
-    font-family: "DM Sans", sans-serif;
-    font-size: 36px;
-    margin-left: 20px;
+    width: 100%;
+    padding: 3%;
+    font-size: xx-large;
+    font-family: "DM Sans";
+    color: #705b36;
+    font-weight: bolder;
 }
 /* Estilos para cada tarjeta de producto */
 .product-card {
@@ -113,19 +120,21 @@ input[type="checkbox"]:checked {
     height: 350px; 
     /* margin: 0 10px;  */
     background-color: white;
-    padding: 20px;
+    padding: 0px;
     box-sizing: border-box;
     display: inline-block; 
     vertical-align: top; 
     max-width: calc(25% - 20px); 
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    
 }
 
 .product-card img {
-    max-width: 100%; /* La imagen se ajusta al ancho de su contenedor */
+    margin-top: 2%;
+    max-width: 50%; /* La imagen se ajusta al ancho de su contenedor */
     height: auto; /* Altura automática para mantener la proporción */
-    max-height: calc(100% - 160px); /* Altura máxima para la imagen, restando espacio para los botones y el precio */
-    object-fit: contain; /* Hacer que la imagen se ajuste dentro del contenedor manteniendo su proporción */
+    border: dotted 2px #705b36;
+    border-radius: 8px;
 }
 
 /* Estilos para el contenedor de productos */
@@ -140,6 +149,7 @@ input[type="checkbox"]:checked {
     flex-wrap: nowrap; /* Evitar que las tarjetas se envuelvan por defecto */
     justify-content: center; /* Centrar los elementos hijos horizontalmente */
     min-width: 100%; /* Establecer un ancho mínimo para el contenedor */
+    margin-right: 0%;
 }
 
 
@@ -203,7 +213,7 @@ input[type="checkbox"]:checked {
 /*-----------------------------------------------------------------------------INICIO PARA LOS ESTILOS DE ESCOGE TU FAVORITO-----------------------------------------------------*/
 #productos-container {
     margin: 0 auto; /* Esto alinea el contenedor al centro horizontalmente */
-    width: 80%; /* Puedes ajustar el ancho según tus necesidades */
+    width: 90%; /* Puedes ajustar el ancho según tus necesidades */
 }
 #escogeTuFavorito{
     justify-content: center;
@@ -211,9 +221,11 @@ input[type="checkbox"]:checked {
 }
 
 #titulo--escogeTuFavorito {
-    font-family: "DM Sans", sans-serif;
-    font-size: 36px;
-    margin-left: 20px;
+    padding: 3%;
+    font-size: xx-large;
+    font-family: "DM Sans";
+    color: #705b36;
+    font-weight: bolder;
 }
 
 .btn-comprar, .btn-detalles{
@@ -226,12 +238,45 @@ input[type="checkbox"]:checked {
     font-family: "DM Sans", sans-serif;
     font-size: large;
     transition: none;
+    width: 100%;
 }
 
 .btn-comprar:hover, .btn-detalles:hover {
     background-color: white;
     color: #FF8DC7;
     border: 2px solid #FF8DC7;
+}
+
+.card {
+    /* border: transparent solid 1px; */
+    padding: 0%;
+    margin: 2%;
+    box-sizing: border-box;
+    border: 2px #FF8DC7 solid;
+    border-radius: 6px;
+
+}
+
+.card-body h5, .card-body p, .card-body button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card-body h5{
+    color: #705b36;
+    font-weight: 500;
+    font-size: larger;
+}
+.card-body p{
+    color: #705b36;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.btn{
+    text-align: center;
 }
 /*-----------------------------------------------------------------------------FIN DE LOS ESTILOS DE ESCOGE TU FAVORITO----------------------------------------------------------*/
 

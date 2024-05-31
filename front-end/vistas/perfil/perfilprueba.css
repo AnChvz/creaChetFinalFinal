@@ -46,7 +46,7 @@
     transition-duration: 0.5s;
     cursor: pointer;
     padding: 5% 15%;
-    margin: 22% 0%;
+    margin: 3% 0%;
     box-shadow: 2px 2px 5px grey;
 }
 
@@ -57,6 +57,10 @@
     border-radius: 20px;
     width: auto;
     height: 100%;
+}
+
+.boton--abajo{
+    margin-bottom: 8%;
 }
 
 .titulo--datos {
@@ -84,7 +88,7 @@
 }
 
 .card--datos {
-    margin: 4% 8%;
+    margin: 5% 8%;
     border: solid 2px #705b36;
     border-radius: 50px;
 }
@@ -111,6 +115,7 @@
     color: #FF8DC7;
     font-weight: 600;
     padding: 2%;
+    cursor: text;
 }
 
 .btn--editar img{
