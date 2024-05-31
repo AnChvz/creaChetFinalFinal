@@ -41,6 +41,20 @@
  color:#936536; 
    
 }
+#BotonContinuar{
+    
+    background-color: #FF8DC7;
+    color: white;
+    border: 2px solid #FF8DC7;
+    font-size: medium;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#BotonContinuar:hover{
+    background-color: white;
+    color:#FF8DC7;
+}
 
 @media (max-width:760px) {
     #ModosdePago {

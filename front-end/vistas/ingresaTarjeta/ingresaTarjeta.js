@@ -54,3 +54,43 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.getElementById('BotonRegresar').addEventListener('click', function() {
+    window.location.href = "/front-end/vistas/formasPago/formasPago.html";
+});
+
+document.getElementById('InputNumTarjeta').addEventListener('input', function() {
+    // Obtener el valor del campo de número de tarjeta
+    var numTarjeta = this.value;
+    
+    // Dividir el número de tarjeta en grupos de cuatro dígitos
+    var grupos = numTarjeta.match(/.{1,4}/g) || []; // Expresión regular para dividir en grupos de cuatro dígitos
+
+    // Actualizar el contenido de las divisiones en la sección de clave
+    var claveDivs = document.querySelectorAll('#Clave div');
+    for (var i = 0; i < claveDivs.length; i++) {
+        if (i < grupos.length) {
+            claveDivs[i].textContent = grupos[i];
+        } else {
+            claveDivs[i].textContent = '*';
+        }
+    }
+});
+document.getElementById('InputName').addEventListener('input', function() {
+    // Obtener el valor del campo de nombre
+    var nombreCompleto = this.value;
+    
+    // Actualizar la sección de datos con el nombre
+    var datosDivs = document.querySelectorAll('#Datos div');
+    datosDivs[0].textContent = nombreCompleto;
+});
+
+
+document.getElementById('InputFecha').addEventListener('input', function() {
+    // Obtener el valor del campo de fecha
+    var fecha = this.value;
+    
+    // Actualizar la sección de datos con la fecha
+    var datosDivs = document.querySelectorAll('#Datos div');
+    datosDivs[1].textContent = fecha;
+});
