@@ -154,7 +154,7 @@ input[type="checkbox"]:checked {
     font-family: "DM Sans", sans-serif;
 }
 
-#btn-comprarLoMasNuevo, #btn-detallesLoMasNuevo{
+#btn-comprarLoMasNuevo {
     background-color: #FF8DC7;
     color: white;
     border: 2px solid #FF8DC7;
