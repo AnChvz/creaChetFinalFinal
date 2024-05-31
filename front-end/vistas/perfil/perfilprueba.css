@@ -24,7 +24,7 @@
 
 
 .datos--perfil {
-    margin: 0% 10% 0% 2%;
+    margin: 0% 5% 0% 5%;
     width: 80%;
     height: 100%;
 }
@@ -57,7 +57,6 @@
     border: 2px solid #FF8DC7;
     border-radius: 20px;
     width: auto;
-    height: 100%;
 }
 
 .boton--abajo{
@@ -66,6 +65,7 @@
 
 .titulo--datos {
     width: 100%;
+    margin-left: 0%;
 }
 
 .imagen--datos {
@@ -89,13 +89,23 @@
 }
 
 .card--datos {
-    margin: 5% 8%;
-    border: solid 2px #705b36;
+    width: 90%;
+    margin: 2% 6% 5% 6%;
+    /* border: solid 2px #705b36; */
     border-radius: 50px;
 }
 
 .rgn--datos {
     width: 100%;
+}
+
+.rgn--datos h2{
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.rgn--datos h3 {
+    font-weight: 400;
 }
 
 .nombre--usuario {
@@ -132,3 +142,29 @@
     width: 50%;
 }
 
+.modal-content{
+    background-color:#E5D9CA;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    color:#9B8668 ;
+    width: 400px;
+}
+
+.boton-Close,.boton-Agregar,.boton-Eliminar,.boton-Actulizar{
+    background-color: white; 
+    border: 2px solid #AE9775;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 100px;
+    height: 33px;
+    /*text-align: center;*/
+    transition-duration: 0.5s;
+    margin-top:10px;
+    color:#AE9775 ;
+}
+.boton-Close:hover,.boton-Agregar:hover,.boton-Eliminar:hover,.boton-Actulizar:hover {
+    background-color: #AE9775;
+    color: white;
+    cursor: pointer;
+
+}

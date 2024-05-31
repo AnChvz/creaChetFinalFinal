@@ -26,10 +26,9 @@
 <body>
 
     <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container-fluid"> <!-- Contenedor fluido -->
-            <a class="navbar-brand" href="#"><img id="Logo1" src="/front-end/components/navbar/assets/logoP.jpg"
-                    alt=""></a>
-
+        <a class="navbar-brand" href="/front-end/vistas/paginaPrincipal/paginaPrincipal.html"><img id="Logo1"
+                src="/front-end/components/navbar/assets/logoP.jpg" alt=""></a>
+        <div class="container-fluid" id="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,12 +36,12 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active">+37 (17) 379-10-10</a>
-                        <form class="d-flex align-items-center " role="search">
+                        <form class="d-flex align-items-center" role="search">
                             <input class="form-control me-2" id="Input--buscar" type="search"
-                                placeholder="Lo mas Vendido" aria-label="">
+                                placeholder="Lo más vendido" aria-label="">
                             <img class="icon-add" src="/front-end/components/navbar/assets/icono.jpg"
                                 alt="Agregar Nuevo">
                         </form>
@@ -50,20 +49,23 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <a class="btn" id="Acercade" href="#" role="button">Acerca de</a>
+                                <a class="btn" id="Acercade" href="/front-end/vistas/acercaNosotros/acercaNosotros.html"
+                                    role="button">Acerca de</a>
                             </div>
                             <div class="col">
-                                <a class="btn" id="Productos" href="#" role="button">Productos</a>
+                                <a class="btn" id="Productos" href="/front-end/vistas/productos/productos.html"
+                                    role="button">Productos</a>
                             </div>
                             <div class="col">
-                                <a class="btn" id="Contacto" href="#" role="button">Contacto</a>
+                                <a class="btn" id="Contacto" href="/front-end/vistas/contacto/contacto.html"
+                                    role="button">Contacto</a>
                             </div>
                             <div class="col">
-                                <a class="navbar-brand" id="Perfil" href="#">
-                                    <img id="Logo3" src="/front-end/components/navbar/assets/icono3.svg" alt="">
+                                <a class="navbar-brand" id="Perfil" href="/front-end/vistas/logIn/logIn.html" onclick="verificarSesion()">
+                                    <img id="Logo3" src="/front-end/components/navbar/assets/icono3.svg" alt=""></button>
+                                    
                                 </a>
                             </div>
-
                         </div>
                         <div class="row mt-4">
                             <div class="col">
@@ -76,31 +78,28 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </ul>
             </div>
-
         </div>
     </nav>
 
     <!--Aquí empieza la tarjeta de Mis Productos-->
     <div class="card--perfil row align-content-center justify-content-center text-center">
 
-        <div class="datos--perfil text-center">
+        <div class="datos--perfil row text-center">
             <div class="titulo--datos row text-center">
-                <h2 class="letritx">Hola </h2>
+                <h2 class="letritx">Bienvenido a tu perfil</h2>
                 <h2 class="letritx" id="name"> </h2>
 
             </div>
-            <section class="card--datos text-center">
+            <section class="card--datos row text-center">
                 <div class="rgn--datos row text-center nombre">
 
-                    <h2 class="letritx">Bienvenido a tu perfil. Aquí tienes las opciones disponibles para gestionar tu
+                    <h2 class="letritx">Aquí tienes las opciones disponibles para gestionar tu
                         cuenta:</h2>
                 </div>
                 <div class="rgn--datos row align-content-center justify-content-center text-center">
+                    <br>
                     <h3 class="letritx1">Gestiona tus datos de envío.</h3>
                     <button type="button" class="boton1 " onclick="window.location.href='/front-end/vistas/misDomicilios/misDomiciliosprueba.html'">Dirección</button>
 
@@ -176,6 +175,8 @@
 
 
 
+    <!-- footer -->
+    <!-- Aquí se manda a llamar el footer -->
     <footer class="footer">
         <div class="container text-center">
             <div class="row">
@@ -183,13 +184,14 @@
                 <div class="Parte--derecha col-sm-5 text-center align-content-center justify-content-center">
                     <div class="row">
                         <div class="col-sm-3 text-center">
-                            <a id="text--a" href="" target="_blank">Inicio</a>
+                            <a id="text--a" href="/front-end/vistas/paginaPrincipal/paginaPrincipal.html">Inicio</a>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <a id="text--a" href="" target="_blank">Producto</a>
+                            <a id="text--a" href="/front-end/vistas/productos/productos.html">Productos</a>
                         </div>
                         <div class="col-sm-5 text-center">
-                            <a id="text--a" href="" target="_blank">Acerca de nosotros</a>
+                            <a id="text--a" href="/front-end/vistas/acercaNosotros/acercaNosotros.html">Acerca de
+                                nosotros</a>
                         </div>
                     </div>
                 </div>
@@ -202,13 +204,15 @@
                 <div class="Parte--izquierda col-sm-5 text-center align-content-center justify-content-center">
                     <div class="row">
                         <div class="col-sm-4 text-center">
-                            <a id="text--a" href="" target="_blank">Contacto</a>
+                            <a id="text--a" href="/front-end/vistas/contacto/contacto.html">Contacto</a>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <a id="text--a" href="" target="_blank">Registrate</a>
+                            <a id="text--a"
+                                href="/front-end/vistas/registroUsuarios/registroUsuarios.html">Registrate</a>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <a id="text--a" href="" target="_blank">Carrito de compras</a>
+                            <a id="text--a" href="/front-end/vistas/carritoCompras/carritoCompras.html">Carrito de
+                                compras</a>
                         </div>
                     </div>
                 </div>
@@ -216,16 +220,16 @@
             <hr>
             <div class="row">
                 <div class="col-sm-12 text-center align-items-center justify-content-center">
-                    <a href="https://www.facebook.com/"><img class="icono" id="icono--fb"
+                    <a href="https://www.facebook.com/" target="_blank"><img class="icono" id="icono--fb"
                             src="/front-end/components/footer/assets/image_fb.png" alt=""></a>
-                    <a href="https://www.facebook.com/"><img class="icono" id="icono--ig"
+                    <a href="https://www.instagram.com/" target="_blank"><img class="icono" id="icono--ig"
                             src="/front-end/components/footer/assets/image_ig.png" alt=""></a>
-                    <a href="https://www.facebook.com/"><img class="icono" id="icono--wha"
+                    <a href="https://www.whatsapp.com/" target="_blank"><img class="icono" id="icono--wha"
                             src="/front-end/components/footer/assets/image_wha.png" alt=""></a>
                 </div>
             </div>
             <br>
-            <p>"Tú lo imaginas, nosotros lo creamos"</p>
+            <p>"Tú lo imaginas,<br>nosotros lo creamos"</p>
         </div>
     </footer>
 
