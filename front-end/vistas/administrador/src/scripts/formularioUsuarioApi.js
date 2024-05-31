@@ -122,7 +122,7 @@ function actualizarUsuario() {
     const nuevoPassword = document.getElementById("passwordUser1").value;
     const nuevoTelUser = document.getElementById("telUser1").value; // Obtener el teléfono
     const nuevaFotoUser = document.getElementById("fotoUser1").value; // Obtener la foto de perfil
-    const nuevoRol = document.querySelector('input[name="rol"]:checked').value; // Obtener el rol
+    const nuevoRol = document.querySelector('input[name="rol1"]:checked').value; // Obtener el rol
     
     const usuario={
         id: nuevoIdU,
@@ -201,3 +201,4 @@ function cargarDatosEnFormulario(id) {
 window.onload = () => {
     actualizarTabla();
 };
+
