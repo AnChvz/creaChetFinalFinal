@@ -232,11 +232,14 @@ function generarTarjetas(productos) {
             <img src="${producto.url_imagen}" alt="${producto.nombre}">
             <h3 id="card-productoNombre">${producto.nombre}</h3>
             <p>Precio: $ ${producto.precio}</p>
+            <a href="/front-end/vistas/carritoCompras/carritoCompras.html">
             <button id="btn-comprarLoMasNuevo">Comprar</button>
+            </a>
         `;
         containerProductos.appendChild(card);
     });
 }
+
 
 // Invertir el orden del arreglo de productos para mostrar los más recientes primero
 productos.reverse();
@@ -336,12 +339,22 @@ function mostrarProductos() {
         botonComprar.classList.add('btn', 'btn-comprar');
         botonComprar.textContent = 'Agregar al carrito';
 
+        // Añadir evento de clic para redirigir a otra página
+        botonComprar.addEventListener('click', function() {
+            window.location.href = '/front-end/vistas/carritoCompras/carritoCompras.html';
+        });
+
+    // Añadir el botón al DOM (por ejemplo, al body o a otro contenedor)
+    document.body.appendChild(botonComprar);
+
+
         // Agregar botones al contenedor
         botonContainer.appendChild(botonComprar);
 
         // Agregar contenedor de botones al cuerpo de la tarjeta
         cuerpo.appendChild(titulo);
         cuerpo.appendChild(precio);
+        cuerpo.appendChild(descripcion);
         cuerpo.appendChild(botonContainer); 
 
 
